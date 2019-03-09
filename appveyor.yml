@@ -5,7 +5,7 @@ cache:
   - '%APPDATA%\npm-cache'
   - '%USERPROFILE%\.electron'
 install:
-  - ps: Install-Product node 8 x86
+  - ps: Install-Product node 10 x86
   - npm install
 build_script:
   - npm run dist
