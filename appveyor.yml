@@ -6,10 +6,9 @@ cache:
   - '%USERPROFILE%\.electron'
 install:
   - ps: Install-Product node 10 x86
-  - npm install
+  - npm install --build-from-source --verbose --debug
 build_script:
   - npm run dist
 test: off
 artifacts:
   - path: dist
-
