@@ -1,9 +1,5 @@
 platform:
   - x86
-cache:
-  - node_modules
-  - '%APPDATA%\npm-cache'
-  - '%USERPROFILE%\.electron'
 install:
   - ps: Install-Product node 8 x86
   - npm install --build-from-source --verbose
